@@ -14,7 +14,7 @@ For consistency sake, there are a few things that are exactly the same across al
 This project is broken into 3 sections: **Frontend**, **Backend-API**, and **Backend-SSR**.
 
 ### Frontend ###
-Frontend is the GUI(Graphical User Interface) that the user will see when they visit the site. All of the projects in the **Frontend** folder contain all of the required HTML(Markup), CSS(Style), and Javascript(Client Side Scripting) that is required for the site to function. I have choosen to build GUIs with what I think are the 11 **MOST** popular client side frameworks. These frameworks include:
+Frontend is the GUI(Graphical User Interface) that the user will see when they visit the site. All of the projects in the **Frontend** folder contain all of the required HTML(Markup), CSS(Style), and Javascript(Client Side Scripting) that is required for the site to function. I have choosen to build GUIs with what I think are the 11 **MOST** popular client side frameworks. Below are these frameworks presented alphabetically:
 ```
 AngularJS: 1.6.4
 Angular: 4.1.3
@@ -27,4 +27,44 @@ Polymer: 2.0.0
 React: 15.6.1
 Svelte: 1.25.1
 Vue.js: 2.4.2
+```
+### Backend-API ###
+Backend API is the server side code that generates the data for our frontend. In addition to multiple different languages, I have also decided to cover many different frameworks in each language. Below are what I feel at the **MOST** popular frameworks in the **7 MOST** popular backend programming languages. Below are the languages and frameworks sorted alphabetically:
+```
+**C#**
+ASP.Net
+ASP.Net Core
+
+**Go**
+Martini
+Gorilla
+Echo
+
+**Java**
+Spring
+Spark
+Struts
+Grails
+
+**Node.js**
+Express
+Koa
+Hapi
+Nodal
+Strongloop
+
+**PHP**
+Slim
+Lumen
+Phalcon
+
+**Python**
+Django
+Flask
+Web2Py
+Falcon
+
+**Ruby**
+Rails
+Sinatra
 ```
