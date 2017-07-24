@@ -1,0 +1,206 @@
+<pre>
+Users - People that login to Ticketize
+Customers - People that call in with issues
+Locations - Locations where of customers
+Tickets - Tickets that are put in by Users for Customers
+
+#################################################################
+########## Users ################################################
+#################################################################
+Name: Get Users
+Description: Get all users
+URL: /api/users
+Method: GET
+Body: NA
+Result: [
+    {id: 1, firstName: "John", lastName: "McClane", username: "john.mcclane", password: "livefreediehard", email: "john.mcclane@example.com", cellPhone: "999-999-9999", deskPhone: "999-999-9998"},
+    {id: 2, firstName: "John", lastName: "Rambo", username: "john.rambo", password: "firstblood", email: "john.rambo@example.com", cellPhone: "999-999-9997", deskPhone: "999-999-9996"}]
+
+Name: Get User
+Description: Get a specific user
+URL: /api/users/[int:id]
+Method: GET
+Body: NA
+Result: {id: 1, firstName: "John", lastName: "McClane", username: "john.mcclane", password: "livefreediehard", email: "john.mcclane@example.com", cellPhone: "999-999-9999", deskPhone: "999-999-9998"}
+
+Name: Update User
+Description: Update a specific user
+URL: /api/users/[int:id]
+Method: PUT
+Body: {firstName: "John", lastName: "McClane", username: "john.mcclane", password: "livefreediehard", email: "john.mcclane@example.com", cellPhone: "999-999-9999", deskPhone: "999-999-9998"}
+Result: {success: true, message: "Updated user"}
+
+Name: Delete User
+Description: Delete a specific user
+URL: /api/users/[int:id]
+Method: DELETE
+Body: NA
+Result: {success: true, message: "Deleted user"}
+
+#################################################################
+########## Customers ############################################
+#################################################################
+Name: Get Customers
+Description: Get all customers
+URL: /api/customers
+Method: GET
+Body: NA
+Result: [
+    {id: 1, firstName: "John", lastName: "McClane", username: "john.mcclane", email: "john.mcclane@example.com", contactNumber: "999-999-9998", location: {id: 1, name: "New York HR Office", city: "New York", state: "New York", streetAddress: "1100 Broadway Ave.", phone: "999-999-9998"}},
+    {id: 2, firstName: "John", lastName: "Rambo", username: "john.rambo", password: "firstblood", email: "john.rambo@example.com", contactNumber: "999-999-9996", location: {id: 2, name: "Chicago Electrical Plant ", city: "Chicago", state: "Illinois", streetAddress: "204 Charleston Dr.", phone: "888-888-8888"}}]
+
+Name: Get Customer
+Description: Get a specific customer
+URL: /api/customers/[int:id]
+Method: GET
+Body: NA
+Result: {id: 1, firstName: "John", lastName: "McClane", username: "john.mcclane", email: "john.mcclane@example.com", contactNumber: "999-999-9998", location: {id: 1, name: "New York HR Office", city: "New York", state: "New York", streetAddress: "1100 Broadway Ave.", phone: "999-999-9998"}}
+
+Name: Update Customer
+Description: Update a specific customer
+URL: /api/customers/[int:id]
+Method: PUT
+Body: {firstName: "John", lastName: "McClane", username: "john.mcclane", email: "john.mcclane@example.com", contactNumber: "999-999-9998", location: 1}
+
+Name: Delete Customer
+Description: Delete a specific customer
+URL: /api/customers/[int:id]
+Method: DELETE
+Body: NA
+Result: {success: true, message: "Deleted customer"}
+
+#################################################################
+########## Locations ############################################
+#################################################################
+Name: Get locations
+Description: Get all locations
+URL: /api/locations
+Method: GET
+Body: NA
+Result: [
+    {id: 1, name: "New York HR Office", city: "New York", state: "New York", streetAddress: "1100 Broadway Ave.", phone: "999-999-9998"},
+    {id: 2, name: "Chicago Electrical Plant ", city: "Chicago", state: "Illinois", streetAddress: "204 Charleston Dr.", phone: "888-888-8888"}]
+
+Name: Get Location
+Description: Get a specific location
+URL: /api/locations/[int:id]
+Method: GET
+Body: NA
+Result: {id: 1, name: "New York HR Office", city: "New York", state: "New York", streetAddress: "1100 Broadway Ave.", phone: "999-999-9998"}
+
+Name: Update Location
+Description: Update a specific location
+URL: /api/locations/[int:id]
+Method: PUT
+Body: {name: "New York HR Office", city: "New York", state: "New York", streetAddress: "1100 Broadway Ave.", phone: "999-999-9998"}
+Result: {success: true, message: "Updated location"}
+
+Name: Delete Location
+Description: Delete a specific location
+URL: /api/locations/[int:id]
+Method: DELETE
+Body: NA
+Result: {success: true, message: "Deleted location"}
+
+#################################################################
+########## Priorities ###########################################
+#################################################################
+Name: Get Priorities
+Description: Get all priorities
+URL: /api/priorities
+Method: GET
+Body: NA
+Result: [
+    {id: 1, name: "Low", slaText: "14 Days", slaValue: 20160},
+    {id: 2, name: "Medium", slaText: "8 Days", slaValue: 11520},
+    {id: 3, name: "High", slaText: "5 Days", slaValue: 7200},
+    {id: 4, name: "Emergency", slaText: "24 Hours", slaValue: 1440}]
+
+Name: Get Priority
+Description: Get a specific priority
+URL: /api/priorities/[int:id]
+Method: GET
+Body: NA
+Result: {id: 1, name: "Low", slaText: "14 Days", slaValue: 20160}
+
+Name: Update Priority
+Description: Update a specific priority
+URL: /api/priorities/[int:id]
+Method: PUT
+Body: {name: "Low", slaText: "14 Days", slaValue: 20160}
+Result: {success: true, message: "Updated priority"}
+
+Name: Delete Priority
+Description: Delete a specific priority
+URL: /api/prioprities/[int:id]
+Method: DELETE
+Body: NA
+Result: {success: true, message: "Deleted priority"}
+
+#################################################################
+########## TicketUpdates ########################################
+#################################################################
+Name: Get Ticket Updates
+Description: Get all ticket updates
+URL: /api/ticketUpdates
+Method: GET
+Body: NA
+Result: [
+    {id: 1, ticket_id: 1, user_id: 1, updateText: "Used plunger on toilet, but it is really clogged. Called a plumber", createdAt: "2010-09-01 16:31:00"}
+]
+
+Name: Get Ticket Update
+Description: Get a specific ticket update
+URL: /api/ticketUpdates/[int:id]
+Method: GET
+Body: NA
+Result: {id: 1, ticket_id: 1, user_id: 1, updateText: "Used plunger on toilet, but it is really clogged. Called a plumber", createdAt: ""2010-09-01 16:31:00"}
+
+#################################################################
+########## TicketStatuses #######################################
+#################################################################
+Name: Get Ticket Statuses
+Description: Get all ticket statuses
+URL: /api/ticketStatuses
+Method: GET
+Body: NA
+Result: [
+    {id: 1, name: "Open"},
+    {id: 2, name: "In Progress"},
+    {id: 3, name: "On Hold"},
+    {id: 4, name: "Project"},
+    {id: 5, name: "Closed"}
+]
+
+Name: Get Ticket Update
+Description: Get a specific ticket update
+URL: /api/ticketUpdates/[int:id]
+Method: GET
+Body: NA
+Result: {id: 1, ticket_id: 1, user_id: 1, value: "Used plunger on toilet, but it is really clogged. Called a plumber", createdAt: ""2010-09-01 16:31:00"}
+
+#################################################################
+########## Tickets ##############################################
+#################################################################
+Name: Get Tickets
+Description: Get all tickets
+URL: /api/tickets
+Method: GET
+Body: NA
+Result: [
+    {id: 1, title: "Toilet Plugged", descrition: "I walked into the bathroom and noticed that the toilet was plugged. It will not flush.", customer:  {id: 1, firstName: "John", lastName: "McClane", username: "john.mcclane", email: "john.mcclane@example.com", contactNumber: "999-999-9998", locations: [{id: 1, name: "New York HR Office", city: "New York", state: "New York", streetAddress: "1100 Broadway Ave.", phone: "999-999-9998"}]}, location: {id: 1, name: "New York HR Office", city: "New York", state: "New York", streetAddress: "1100 Broadway Ave.", phone: "999-999-9998"}, createdAt: "2010-09-01 16:31:00", priority: {id: 1, name: "Low", slaText: "14 Days", slaValue: 20160}, currentPhone: "999-999-9999", ticketUpdates: [1], status: {id: 1, name: "Open"}},
+    {id: 2, title: "Printer will not print", descrition: "I tried to send a print job to the printer today, but it will not print my document. It does not make any noise or anything.", customer:  {id: 1, firstName: "John", lastName: "McClane", username: "john.mcclane", email: "john.mcclane@example.com", contactNumber: "999-999-9998", locations: [{id: 1, name: "New York HR Office", city: "New York", state: "New York", streetAddress: "1100 Broadway Ave.", phone: "999-999-9998"}]}, location: {id: 1, name: "New York HR Office", city: "New York", state: "New York", streetAddress: "1100 Broadway Ave.", phone: "999-999-9998"}, createdAt: "2010-09-01 16:31:00", priority: {id: 1, name: "Low", slaText: "14 Days", slaValue: 20160}, currentPhone: "999-999-9999", ticketUpdates: [2], status: {id: 5, name: "Closed"}}]
+
+Name: Get Ticket
+Description: Get a specific ticket
+URL: /api/tickets/[int:id]
+Method: GET
+Body: NA
+Result: {id: 1, title: "Toilet Plugged", descrition: "I walked into the bathroom and noticed that the toilet was plugged. It will not flush.", customer:  {id: 1, firstName: "John", lastName: "McClane", username: "john.mcclane", email: "john.mcclane@example.com", contactNumber: "999-999-9998", locations: [{id: 1, name: "New York HR Office", city: "New York", state: "New York", streetAddress: "1100 Broadway Ave.", phone: "999-999-9998"}]}, location: {id: 1, name: "New York HR Office", city: "New York", state: "New York", streetAddress: "1100 Broadway Ave.", phone: "999-999-9998"}, createdAt: "2010-09-01 16:31:00", priority: {id: 1, name: "Low", slaText: "14 Days", slaValue: 20160}, currentPhone: "999-999-9999", ticketUpdates: [{id: 1, ticket_id: 1, user_id: 1, updateText: "Used plunger on toilet, but it is really clogged. Called a plumber", createdAt: "2010-09-01 16:31:00"}], status: {id: 1, name: "Open"}}
+
+Name: Update Ticket
+Description: Update a specific ticket
+URL: /api/tickets/[int:id]
+Method: PUT
+Body: {updateText: "Used plunger on toilet, but it is really clogged. Called a plumber", status: 5}
+Result: {success: true, message: "Updated ticket"}
