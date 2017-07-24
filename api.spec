@@ -1,9 +1,3 @@
-<pre>
-Users - People that login to Ticketize
-Customers - People that call in with issues
-Locations - Locations where of customers
-Tickets - Tickets that are put in by Users for Customers
-
 #################################################################
 ########## Users ################################################
 #################################################################
