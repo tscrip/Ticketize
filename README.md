@@ -70,6 +70,12 @@ Rails
 Sinatra
 </pre>
 
+### API Spec ###
+I have included a file called **api_spec.txt** that contains the **REQUIRED** spec for the APIs. All of the frameworks **MUST** follow this spec to the letter.
+
+### Database Spec ###
+I have also included a file called **database_spec.txt**. This file contains the database layout that **ALL** of these frameworks will follow to the letter.
+
 ### Rating System ###
 A comparison is nothing without a rating system. All of the frameworks above will be rated on the following criteria.
 <pre>
