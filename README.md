@@ -69,3 +69,13 @@ Falcon
 Rails
 Sinatra
 </pre>
+
+### Rating System ###
+A comparison is nothing without a rating system. All of the frameworks above will be rated on the following criteria.
+<pre>
+Learning Curve (1-10) - How hard the framework is to learn
+Popularity (1-10) - Based on GitHub Starts
+Community (1-10) - Based on Combination of StackOverflow post and GitHub Issues
+Versitility (1-10) - Based on how rigid the framework is
+Lines Of Code (1-10) - How many lines of code were required to build the solution
+</pre>
