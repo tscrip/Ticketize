@@ -79,3 +79,12 @@ Community (1-10) - Based on Combination of StackOverflow post and GitHub Issues
 Versitility (1-10) - Based on how rigid the framework is
 Lines Of Code (1-10) - How many lines of code were required to build the solution
 </pre>
+
+### Slant On Frameworks ###
+As impartial as I would like to be, I have already dealt with most of these frameworks. I have oppinions about them, and I may slant in those directions. In the efforts of fairness, I will inform you of my preferred framework up front, so you can ignore my rants. These are my current **FAVORITE** frameworks:
+<pre>
+Backend: Node (Express)
+Frontend: AngularJS
+</pre>
+
+Now that we have got that out of the way, let get started. At the end of this experiment, I will rank all of the frameworks. Who knows, maybe I will become a Java/React developer.
