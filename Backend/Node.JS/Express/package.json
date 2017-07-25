@@ -1,0 +1,17 @@
+{
+  "name": "ticketize-express",
+  "version": "1.0.0",
+  "description": "Ticketize Backend built using Express framework",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tscrip",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "knex": "^0.13.0",
+    "mysql": "^2.13.0"
+  }
+}
