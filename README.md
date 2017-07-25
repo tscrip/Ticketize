@@ -89,7 +89,7 @@ Lines Of Code (1-10) - How many lines of code were required to build the solutio
 ### Slant On Frameworks ###
 As impartial as I would like to be, I have already dealt with most of these frameworks. I have oppinions about them, and I may slant in those directions. In the efforts of fairness, I will inform you of my preferred framework up front, so you can ignore my rants. These are my current **FAVORITE** frameworks:
 <pre>
-Backend: Node (Express)
+Backend: Node (Express + Knexjs + Treeize)
 Frontend: AngularJS
 </pre>
 
